@@ -12,6 +12,9 @@ class client0 {
         msg =  inp.readLine();
         d_out.writeUTF(msg);
       }
+      d_out.flush();
+      d_out.close();
+      s.close();
     }
       catch(IOException e){
          System.out.println(e);
